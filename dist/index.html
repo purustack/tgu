@@ -40,6 +40,10 @@
     .chat-panel{height:min(510px,calc(100dvh - 110px));max-height:calc(100dvh - 110px);padding:0;display:grid;grid-template-rows:auto minmax(0,1fr) auto auto auto;overflow:hidden}.chat-thread{height:auto;min-height:0;overscroll-behavior:contain}.chat-quick{max-height:90px;overflow-y:auto}.chat-form{align-items:center}.chat-book{margin-bottom:14px}
     @media(max-width:760px){.chat-panel{height:min(520px,calc(100dvh - 88px));max-height:calc(100dvh - 88px);bottom:68px}.chat-thread{height:auto}.chat-quick{max-height:84px}}
   </style>
+  <style>
+    /* A detailed India overlay keeps the northern outline legible at this scale. */
+    .world-map,.country-highlights{transform:scale(1.07)}.world-route:after{content:'';position:absolute;inset:0;z-index:2;pointer-events:none;background:url('assets/india-outline.svg') center/contain no-repeat;transform:scale(1.07);transform-origin:center}@media(max-width:760px){.world-map,.country-highlights,.world-route:after{transform:scale(1.14)}}
+  </style>
 </head>
 <body>
   <header class="wrap"><nav><a href="#top" class="brand">ToGermanUni</a><div class="links"><a href="#why">Why ToGermanUni</a><a href="#journey">The journey</a><a href="#plans">Support plans</a></div><button class="lang-toggle" id="lang-toggle" aria-label="Switch language">DE</button><button class="nav-cta open-modal">Start your journey <span class="arrow">→</span></button><button class="menu" aria-label="Open menu">☰</button></nav></header>
